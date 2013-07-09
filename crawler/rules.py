@@ -38,5 +38,73 @@ rules = { "feedex": {
                                 "describe": { "xpath" : "./p/text()"}
                                },
                      "next"  : {  "xpath" : "///div[@class='PageNumbers']/child::span/following-sibling::*[1]//@href" }
+                    },
+         "b2b":     {
+                     "nodes" : "//li[@onmouseout=\"this.className=' '\"]/a",
+                     "fields": {
+                                "url"     : { "xpath" : "./@href" },
+                                "source"  : { "xpath" : "./@title" }
+                               }
+                    },
+         "toocle":   {
+                     "nodes" : "//td[@width='590']/table[3]//a[@class='blue']",
+                     "fields": {
+                                "url"     : { "xpath" : "./@href" },
+                                "source"  : { "xpath" : "./text()"},
+                               }
+                    },
+         "360hy":   {
+                     "nodes" : "//a[text() != '']",
+                     "fields": {
+                                "url"     : { "xpath" : "./@href" },
+                                "source"  : { "xpath" : "./text()"},
+                               }
+                    },
+         "jianzhu":   {
+                     "nodes" : "//div[@class='div_content_h2']/a",
+                     "fields": {
+                                "url"     : { "xpath" : "./@href" },
+                                "source"  : { "xpath" : "./text()"},
+                               }
+                    },
+         "zgw":   {
+                     "nodes" : "//div[@class='cmInner regList']//a | //div[@class='cmInner extend']//td[@class='c']//a",
+                     "fields": {
+                                "url"     : { "xpath" : "./@href" },
+                                "source"  : { "xpath" : "./@title"},
+                               }
+                    },
+         "lvse":
+                    {
+                     "nodes" : "//div[@class='info']/h2",
+                     "fields": {
+                                "url"     : { "xpath" : "./a[2]/@href" },
+                                "source"  : { "xpath" : "./a[1]/text()"    },
+                               },
+                     "next"  : {  "xpath" : u"//a[@class='next' and contains(text(),'下一页')]/@href" }
+                    },
+          "caijing":
+                    {
+                     "nodes" : "//table[@id='tab_s']//a",
+                     "fields": {
+                                "url"     : { "xpath" : "./@href" },
+                                "source"  : { "xpath" : "./text()"    },
+                               }
+                    },
+          "junshi":
+                    {
+                     "nodes" : "//div[@class='jspd_4']//a",
+                     "fields": {
+                                "url"     : { "xpath" : "./@href" },
+                                "source"  : { "xpath" : "./text()"    },
+                               }
+                    },
+          "daxue":
+                    {
+                     "nodes" : "//td//p//a",
+                     "fields": {
+                                "url"     : { "xpath" : "./@href" },
+                                "source"  : { "xpath" : "./text()"    },
+                               }
                     }
        }

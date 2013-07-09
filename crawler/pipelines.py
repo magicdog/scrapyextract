@@ -53,8 +53,8 @@ class FilterPipeline(object):
                 suffix = 'y'
             rss = item["rss"]
             if rss is None:
-                rss = ''
-            line = "%s\t%s\t%s\t%s\t%s\t%s\n" %(item.get("source"), domain, item["keyword"],url,rss,suffix)
+                rss = 'rss'
+            line = "%s\t%s\t%s\t%s\t%s\t%s\n" %(url, domain, item.get("source"), item["keyword"],rss,suffix)
             file.write(line.encode("utf-8",'ignore'))
         return item
         

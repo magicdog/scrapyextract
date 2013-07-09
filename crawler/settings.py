@@ -41,8 +41,11 @@ MAX_MONGO_RECONNECT_ATTEMPTS = 3
 KEYWORD_FETCH_INTERVAL_HOURS = 24
 # CHANNEL_KEYWORD_URL = 'http://10.127.10.66:8030/service/global/doc_count?count=50'
 
-CTRLQ_URL = 'http://www.google.com/uds/GfindFeeds?q=%s&key=ABQIAAAA6C4bndUCBastUbawfhKGURTFnqBuwPowtiyJohQxh-8vJXk-MBTetbTPnQAbLgs9lUkeE34hNbC15Q&hl=zh_CN&v=1.0'
-DOMAIN = 'dzhai'
+# CTRLQ_URL = 'http://www.google.com/uds/GfindFeeds?q=%s&key=ABQIAAAA6C4bndUCBastUbawfhKGURTFnqBuwPowtiyJohQxh-8vJXk-MBTetbTPnQAbLgs9lUkeE34hNbC15Q&hl=zh_CN&v=1.0'
+# DOMAIN = 'dzhai'
+
+# DOMAIN = 'b2b'
+DOMAIN = 'daxue'
 # CHANNELSTAT_DATABASE_INFO = {
 #     'host' : '10.127.10.37,10.127.10.68,10.127.10.23',
 #     'table' : {

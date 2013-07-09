@@ -98,7 +98,7 @@ class ChannelSpider(BaseSpider):
     
     def get_page(self, root, url):
         res = None
-        next_page = self.rule["next"]
+        next_page = self.rule.get("next")
         if next_page is None:
             return res
         ns = root.xpath(next_page["xpath"])
